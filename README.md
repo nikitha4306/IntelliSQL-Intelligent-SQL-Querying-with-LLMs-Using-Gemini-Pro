@@ -1,20 +1,20 @@
-IntelliSQL: Intelligent SQL Querying with Gemini Pro
+**IntelliSQL: Intelligent SQL Querying with Gemini Pro**
 
 IntelliSQL is a revolutionized database querying tool that bridges the gap between natural language and structured data. By leveraging the Gemini 1.5 Flash model, it allows non-technical users to extract insights from a SQLite database using plain English.
 
-🚀 Features
+**🚀 Features**
 
-Text-to-SQL Translation: Converts English questions into precise SQL queries using LLMs.
+**Text-to-SQL Translation:** Converts English questions into precise SQL queries using LLMs.
 
-Regex Sanitization: A custom logic layer that cleans AI responses to ensure only valid SQL is executed.
+**Regex Sanitization:** A custom logic layer that cleans AI responses to ensure only valid SQL is executed.
 
-Interactive Dashboard: A professional Streamlit interface with dark-mode support and sidebar navigation.
+**Interactive Dashboard:** A professional Streamlit interface with dark-mode support and sidebar navigation.
 
-Secure Configuration: API keys are managed safely via .env files and python-dotenv.
+**Secure Configuration:** API keys are managed safely via .env files and python-dotenv.
 
-Real-time Results: Instant rendering of database records in structured data tables.
+**Real-time Results:** Instant rendering of database records in structured data tables.
 
-🛠️ Technology Stack
+**🛠️ Technology Stack**
 
 Frontend: Streamlit
 
@@ -24,43 +24,61 @@ Database: SQLite
 
 AI Model: Gemini 1.5 Flash
 
-📂 Project Structure
+**📂 Project Structure**
 
 Plaintext
 
-IntelliSQL/ ├── .venv/ # Virtual environment [cite: 113] ├── Project Files/ # Core application source │ ├── .env # Secure API Key storage [cite: 1, 127] │ ├── app.py # Streamlit UI & AI Logic [cite: 83, 136] │ ├── sql.py # DB Engineering & Seeding [cite: 137] │ ├── data.db # SQLite Database [cite: 109] │ └── requirements.txt # Project Dependencies [cite: 122] └── README.md # High-level Documentation [cite: 57, 83]
+IntelliSQL/
+├── .venv/                # Virtual environment [cite: 113]
+├── Project Files/        # Core application source
+│   ├── .env              # Secure API Key storage [cite: 1, 127]
+│   ├── app.py            # Streamlit UI & AI Logic [cite: 83, 136]
+│   ├── sql.py            # DB Engineering & Seeding [cite: 137]
+│   ├── data.db           # SQLite Database [cite: 109]
+│   └── requirements.txt  # Project Dependencies [cite: 122]
+└── README.md             # High-level Documentation [cite: 57, 83]
 
-⚙️ Setup & Installation
+**⚙️ Setup & Installation**
 
-Clone the Repository:
+**Clone the Repository:**
 
-Bash eg: git clone https://github.com/nikitha4306/IntelliSQL-Intelligent-SQL-Querying-with-LLMs-Using-Gemini-Pro
+Bash
+eg: git clone https://github.com/nikitha4306/IntelliSQL-Intelligent-SQL-Querying-with-LLMs-Using-Gemini-Pro.git
 
-Set up Environment:
 
-Bash python -m venv .venv source .venv/bin/activate # On Windows use .venv\Scripts\activate pip install -r "Project Files/requirements.txt"
+**Set up Environment:**
 
-Configure API Key:
+Bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+pip install -r "Project Files/requirements.txt"
 
-Create a .env file in the Project Files directory and add your key: Plaintext GOOGLE_API_KEY="your_google_gemini_api_key"
+**Configure API Key:**
 
-Initialize Database:
+Create a .env file in the Project Files directory and add your key:
+Plaintext
+GOOGLE_API_KEY="your_google_gemini_api_key"
 
-Bash python "Project Files/sql.py" Run Application:
+**Initialize Database:**
 
-Bash streamlit run "Project Files/app.py"
+Bash
+python "Project Files/sql.py"
+**Run Application:**
 
-👥 Team Members & Roles
+Bash
+streamlit run "Project Files/app.py"
 
-1.Bandla Nikitha (Team Leader): AI Specialist & Project Manager
+**👥 Team Members & Roles**
 
-2.Bapathu Surya Vardhan Reddy: Backend Developer & Data Engineer
+1.Bandla Nikitha (Team Leader): AI Specialist & Project Manager 
 
-3.Boddu Praneeth: Frontend Developer & UI/UX Designer
+2.Bapathu Surya Vardhan Reddy: Backend Developer & Data Engineer 
 
-4.Chinta Bhanu Krishna: QA Engineer & Documentation
+3.Boddu Praneeth: Frontend Developer & UI/UX Designer 
 
-⚠️ Known Issues
+4.Chinta Bhanu Krishna: QA Engineer & Documentation 
+
+**⚠️ Known Issues**
 
 Occasional hallucinations on complex multi-table joins if not specified in the schema.
 
